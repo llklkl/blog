@@ -1,0 +1,34 @@
+baseURL = 'http://llklkl.top/'
+languageCode = 'zh-cn'
+defaultContentLanguage = "zh-cn"
+title = "llklkl's blog"
+theme = "beautifulhugo"
+
+[params]
+  description = "llklkl's blog"
+  author = "llklkl"
+  GitHubUser = "llklkl"
+
+  beian = "蜀ICP备19038537号-1"
+
+  # 主题配置
+  pygmentsCodeFences = true
+  pygmentsUseClasses = true
+  readingTime = true
+  wordCount = true
+  showRelatedPosts = true
+
+[Author]
+  name = "llklkl"
+  email = "fengl6638@gmail.com"
+  github = "llklkl"
+
+[[menu.main]]
+    name = "Blog"
+    url = ""
+    weight = 1
+
+[[menu.main]]
+    name = "About"
+    url = "about/"
+    weight = 3
