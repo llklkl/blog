@@ -18,17 +18,26 @@ theme = "beautifulhugo"
   wordCount = true
   showRelatedPosts = true
 
+[taxonomies]
+#  tag = "tags"
+  category = "categories"
+
 [Author]
   name = "llklkl"
   email = "fengl6638@gmail.com"
   github = "llklkl"
 
 [[menu.main]]
-    name = "Blog"
+    name = "博客"
     url = ""
     weight = 1
 
 [[menu.main]]
-    name = "About"
+    name = "目录"
+    url = "categories/"
+    weight = 2
+
+[[menu.main]]
+    name = "关于"
     url = "about/"
     weight = 3
