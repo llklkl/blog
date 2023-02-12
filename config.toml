@@ -3,6 +3,7 @@ languageCode = 'zh-cn'
 defaultContentLanguage = "zh-cn"
 title = "llklkl's blog"
 theme = "beautifulhugo"
+forcesyncstatic = false
 
 [params]
   description = "llklkl's blog"
