@@ -63,12 +63,12 @@ ubuntu 可以使用 `ufw` 工具来配置防火墙。
 sudo ufw allow from <ip> to any port nfs
 sudo ufw reload
 ```
-如果访问不同，可以先尝试将防火墙放开，然后再配置。
+如果访问不通，可以先尝试将防火墙放开，然后再配置。
 
 
 ## 客户端挂载
 
-### Windows
+### Windows 界面配置
 
 以下以 windows11 为例，配置挂载 nfs 远端目录。
 
@@ -89,3 +89,14 @@ sudo ufw reload
 #### 中文乱码问题解决
 
 按下 `Win + r`，输入 `intl.cpl`，选择 `管理`，然后选择 `更改系统区域设置`，勾选 `Beta版：使用Unicode UTF-8提供全球语言支持`，最后确定并重启电脑。
+
+### Windows 命令配置
+
+打开 `cmd`，使用 mount 命令挂载远程 nfs。示例：
+```shell
+mount.exe -o nolock -o mtype=hard -o timeout=60 -o  \\192.168.1.2\data\ Z:
+```
+表示将 `\\192.168.1.2\data\` 挂载到 `Z:`  盘符下。
+
+
+参见：[Windows系统挂载通用型NAS NFS文件系统](https://help.aliyun.com/document_detail/67165.html)
