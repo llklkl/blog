@@ -55,6 +55,12 @@ sudo exportfs -ra
 
 使用 `exportfs -v` 命令可以查看当前挂载详情。
 
+### 文件权限配置
+对于需要导出的文件夹可以通过 `setfacl` 来设置 nfs 匿名用户 nobody 的权限，如:
+```shell
+setfacl -m u:nobody:rwx -R /data
+```
+
 ### 设置防火墙
 
 ubuntu 可以使用 `ufw` 工具来配置防火墙。
