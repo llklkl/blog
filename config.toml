@@ -4,6 +4,7 @@ defaultContentLanguage = "zh-cn"
 title = "llklkl's blog"
 theme = "beautifulhugo"
 forcesyncstatic = false
+minify = true
 
 [params]
   description = "llklkl's blog"
@@ -18,6 +19,10 @@ forcesyncstatic = false
   readingTime = true
   wordCount = true
   showRelatedPosts = true
+
+  # baidu分析
+  baiduAnalyticsEnable = true
+  baiduAnalyticsId = "4b2dffa674d8f4143e818685e12aedab"
 
 [taxonomies]
 #  tag = "tags"
