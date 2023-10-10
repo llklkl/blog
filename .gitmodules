@@ -1,4 +1,4 @@
 [submodule "themes/beautifulhugo"]
 	path = themes/beautifulhugo
-	url = git@github.com:llklkl/beautifulhugo.git
+	url = https://github.com/llklkl/beautifulhugo.git
 	branch = master
