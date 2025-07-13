@@ -2,27 +2,42 @@ baseURL = 'https://llklkl.top/'
 languageCode = 'zh-cn'
 defaultContentLanguage = "zh-cn"
 title = "llklkl's blog"
-theme = "beautifulhugo"
+theme = "PaperMod"
 forcesyncstatic = false
 minify = true
 
 [params]
+  env = "production"
   description = "llklkl's blog"
+  keywords = ["Blog"]
   author = "llklkl"
   GitHubUser = "llklkl"
 
   beian = "蜀ICP备19038537号-1"
 
   # 主题配置
-  pygmentsCodeFences = true
-  pygmentsUseClasses = true
-  readingTime = true
-  wordCount = true
-  showRelatedPosts = true
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = false
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = false
+  tocopen = false
 
   # baidu分析
   baiduAnalyticsEnable = true
   baiduAnalyticsId = "4b2dffa674d8f4143e818685e12aedab"
+
+[params.footer]
+text = "蜀ICP备19038537号-1"
 
 [taxonomies]
 #  tag = "tags"
